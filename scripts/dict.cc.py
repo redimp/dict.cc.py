@@ -40,8 +40,8 @@ def print_header(from_lang, to_lang):
 
 
 def print_translation(input_word, output_word):
-    print "{}{}{}".format(input_word,
-                          "."*(LINE_LENGTH-len(input_word.decode("utf-8"))),
+    print "{} {} {}".format(input_word,
+                          "."*(LINE_LENGTH-2-len(input_word.decode("utf-8"))),
                           output_word)
 
 
